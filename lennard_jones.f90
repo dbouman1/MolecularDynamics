@@ -21,8 +21,9 @@
 subroutine lennard_jones(r_min, eps, L, r_c, num_bins, p, N, d, force, Ep, vir, c_bin)
     implicit none
 
-    integer, intent(in) :: num_bins
-    integer, intent(inout) :: N, d; real(8), intent(in) :: r_min, eps, r_c, L
+    integer, intent(in) :: num_bins 
+    integer, intent(inout) :: N, d;
+    real(8), intent(in) :: r_min, eps, r_c, L
     real(8), intent(in), dimension(N, d) :: p
 
     real(8), intent(out), dimension(N, d) :: force
